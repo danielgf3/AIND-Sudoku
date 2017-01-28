@@ -3,11 +3,12 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Before when reducing the puzzle, we first used the Eliminate Strategy to find those boxes that only had one possibility and delete this digit of all his companions. Then we applied the Only_Choice Strategy to assign to the boxes with only one possibility this possibility.
+Now before launching these two strategies, we use the Naked_Twins strategy to "block" possible naked twins and eliminate all their digits from their peers, so the other two strategies could work better.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: We simply create two new units (diagonals) and add them to the unitlist, because, unitlist is used for create the variables units and peers, which are used in the methods that implement the strategies used
 
 ### Install
 
